@@ -1,11 +1,11 @@
 import csv
 import os
 
-input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\training_set'
+input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\test_set'
 output_path = 'E:\AI-PBL\PBL\ViT\dataset'
 if not os.path.exists(output_path):
     os.mkdir(output_path)
-txt_path = output_path+'/dfdc_train_labels.csv'
+txt_path = output_path+'/dfdc_test_labels.csv'
 
 videos = os.listdir(input_path)
 videos.sort(key=lambda x: x[:-4])

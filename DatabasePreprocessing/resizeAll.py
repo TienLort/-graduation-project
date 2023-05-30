@@ -10,15 +10,16 @@ def remove_img(path,  img_name):
     os.remove(path + '/' + img_name)
 
 
-file_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\training_set\\image'
+file_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\image'
 file_lists = os.listdir(file_path)
-
+video_num = 0
 new_width = 224
 new_height = 224
 for file_list in file_lists:
     rename_path = os.path.join(file_path, file_list)
     rename_lists = os.listdir(rename_path)
-    # print(file_list)
+    video_num += 1
+    print('Video {} is running ...'.format(video_num))
     i = 0
     k = 0
     for rename_list in rename_lists:

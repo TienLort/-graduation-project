@@ -6,8 +6,8 @@ import cv2
 
 
 def framing():
-    input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\validation_set'
-    output_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\frame'
+    input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\test_set'
+    output_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\frame'
     txt_path = output_path+'/log.txt'
     with open(txt_path, "a", encoding="utf-8") as fi:
         fi.write('\n AllVideosFullName \t Index \t Frame \t Picture\n')
@@ -18,7 +18,7 @@ def framing():
     if len(videos) != 0:
         video_num = 0
         for each_video in videos:
-            # print('Video {} is running ...'.format(video_num))
+            print('Video {} is running ...'.format(video_num))
             each_video_input = input_path+'/'+str(each_video)
             each_video_output_path = output_path+'/'+str(each_video[:-4])
             if not os.path.exists(each_video_output_path):

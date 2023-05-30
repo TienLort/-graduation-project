@@ -52,8 +52,8 @@ def detect(img, new_path, imglist):
 if __name__ == '__main__':
 
     start_time = time.time()
-    original_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\frame'
-    new_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\image'
+    original_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\frame'
+    new_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\image'
     log_path = new_path+'/log.txt'
 
     all_file_lists = os.listdir(original_path)
@@ -66,15 +66,16 @@ if __name__ == '__main__':
             folder_lists.append(filename)
     print('# of folders: '+str(len(folder_lists)))
     print("Start !!!!!!!!!!!")
-
+    video_num = 0
     # folder loop
     for folder_list in folder_lists:
+        print('Video {} is running ...'.format(video_num))
         temp_original_path = original_path+'/'+folder_list
         temp_new_path = new_path+'/'+folder_list
         if not os.path.exists(temp_new_path):
             os.mkdir(temp_new_path)
         temp_log_path = new_path+'/'+folder_list+'/log.txt'
-
+        video_num += 1
         with open(temp_log_path, "a", encoding="utf-8") as fi:
             fi.write('\n# No Found List: \n')
 

@@ -4,7 +4,7 @@ import time
 
 start_time = time.time()
 
-file_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\training_set\\image'
+file_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\image'
 file_lists = os.listdir(file_path)
 for file_list in file_lists:
     rename_path = os.path.join(file_path, file_list)

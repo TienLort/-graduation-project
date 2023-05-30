@@ -4,13 +4,13 @@ import time
 import shutil
 start_time = time.time()
 
-file_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\image'
-file_goal = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set'
+file_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\image'
+file_goal = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set'
 file_lists = os.listdir(file_path)
-k = 0
+video_num = 0
 for file_list in file_lists:
-    print(k)
-    k += 1
+    print('Video {} is running ...'.format(video_num))
+    video_num += 1
     rename_path = os.path.join(file_path, file_list)
     rename_lists = os.listdir(rename_path)
     i = 0
