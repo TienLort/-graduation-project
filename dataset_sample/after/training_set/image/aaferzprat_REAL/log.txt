@@ -1,0 +1,6 @@
+
+# No Found List: 
+
+# Number of not recognition: 0 
+# Number of images: 31 
+# Not recognition rate: 0.0

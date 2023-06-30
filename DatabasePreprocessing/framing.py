@@ -5,9 +5,8 @@ import time
 import cv2
 
 
-def framing():
-    input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\test_set'
-    output_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\frame'
+def framing(input_path, output_path):
+
     txt_path = output_path+'/log.txt'
     with open(txt_path, "a", encoding="utf-8") as fi:
         fi.write('\n AllVideosFullName \t Index \t Frame \t Picture\n')
@@ -59,7 +58,9 @@ def framing():
 
 if __name__ == '__main__':
     start_time = time.time()
-    framing()
+    input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\bdfdc_part_48_3'
+    output_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\frame_val'
+    framing(input_path, output_path)
     end_time = time.time()
     delta_time = datetime.timedelta(seconds=(end_time-start_time))
     print('Running time is: %s ' % (delta_time))

@@ -31,7 +31,6 @@ for file_list in file_lists:
             img_new = cv2.resize(src=img, dsize=(new_width, new_height))
             os.chdir(rename_path)
             cv2.imwrite(new_filename, img_new)
-            # remove_img(rename_path, old_filename)
             i += 1
 
     for rename_list in rename_lists:

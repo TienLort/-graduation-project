@@ -7,8 +7,8 @@ import time
 import face_recognition
 from PIL import Image
 
-resize_x = 256
-resize_y = 256
+resize_x = 224
+resize_y = 224
 tempCantFindFaceImgs = []
 allCantFindFaceImgsNum = 0
 allImgsNum = 0
@@ -52,8 +52,8 @@ def detect(img, new_path, imglist):
 if __name__ == '__main__':
 
     start_time = time.time()
-    original_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\frame'
-    new_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\test_set\\image'
+    original_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\frame_val'
+    new_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\image_val'
     log_path = new_path+'/log.txt'
 
     all_file_lists = os.listdir(original_path)
