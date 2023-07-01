@@ -58,17 +58,9 @@ def framing(input_path, output_path):
 
 if __name__ == '__main__':
     start_time = time.time()
-    input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\bdfdc_part_48_3'
-    output_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\frame_val'
+    input_path = 'E:\AI-PBL\PBL\ViT\dataset\\before\\validation_set'
+    output_path = 'E:\AI-PBL\PBL\ViT\dataset\\after\\validation_set\\frame'
     framing(input_path, output_path)
     end_time = time.time()
     delta_time = datetime.timedelta(seconds=(end_time-start_time))
     print('Running time is: %s ' % (delta_time))
-
-# OUTPUT1(frame images from DFD/original_c23)
-# Running log has been saved here: G:/DFD_img/original_c23/log.txt
-# Running time is: 1:05:49.907241
-
-# OUTPUT2(frame images from DFD/attack_c23)
-# Running log has been saved here: G:/DFD_img/attack_c23/log.txt
-# Running time is: 6:29:04.835291
