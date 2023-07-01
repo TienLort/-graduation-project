@@ -1,4 +1,4 @@
-# -graduation-project  
+# graduation-project  
 Trong thư mục này là quá trình preprocessing dữ liệu.  
 Bước 1: Clone repository về máy và di chuyển vào đó:  
   git clone https://github.com/TienLort/-graduation-project.git  
