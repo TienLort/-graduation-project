@@ -11,8 +11,9 @@ Trong thư mục này là quá trình preprocessing dữ liệu.
   python delLastFile.py  
   python renameAll.py  
   python moveAll.py  
-  python Resize.py  
+  python Resize.py
+* Cấu trúc dataset cần được giống với dataset_sample để có thể sử dụng  
 Dữ liệu sau khi hoàn thành các bước trên có thể sử dụng để làm data đầu vào cho mô hình  
 * Nếu như không thực hiện các bước trên, bạn có thể sử dụng dataset đã được tôi tạo sẵn tại kaggle với kaggle.json  
 Các bước sử dụng kaggle.json đã được thực hiện tại vit_deepfake_v3.ipynb
-  
+
