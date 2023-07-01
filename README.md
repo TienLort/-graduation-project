@@ -11,6 +11,6 @@ Bước 3: Xử lý dữ liệu, chạy lần lượt :
   python delLastFile.py  
   python renameAll.py  
   python moveAll.py  
-  python Resize.py
+  python Resize.py  
 Dữ liệu sau khi hoàn thành các bước trên có thể sử dụng để làm data đầu vào cho mô hình
   
